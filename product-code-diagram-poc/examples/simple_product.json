@@ -1,0 +1,64 @@
+{
+  "product_name": "Simple Web Application",
+  "version": "1.0.0",
+  "description": "A basic web application with frontend and backend",
+  "components": [
+    {
+      "id": "frontend",
+      "name": "Web Frontend",
+      "type": "frontend",
+      "description": "React-based user interface",
+      "dependencies": ["api"],
+      "interactions": [
+        {
+          "target": "api",
+          "action": "calls REST API"
+        }
+      ]
+    },
+    {
+      "id": "api",
+      "name": "REST API",
+      "type": "api",
+      "description": "Express.js API server",
+      "dependencies": ["database"],
+      "interactions": [
+        {
+          "target": "database",
+          "action": "queries"
+        }
+      ]
+    },
+    {
+      "id": "database",
+      "name": "PostgreSQL DB",
+      "type": "database",
+      "description": "Primary data store",
+      "dependencies": [],
+      "interactions": []
+    }
+  ],
+  "flows": [
+    {
+      "name": "User Registration Flow",
+      "steps": [
+        {
+          "name": "User enters data",
+          "type": "process"
+        },
+        {
+          "name": "Validate input",
+          "type": "decision"
+        },
+        {
+          "name": "Store in database",
+          "type": "process"
+        },
+        {
+          "name": "Send confirmation",
+          "type": "process"
+        }
+      ]
+    }
+  ]
+}
