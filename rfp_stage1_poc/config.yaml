@@ -1,0 +1,103 @@
+# RFP Automation Platform Configuration
+# Stages 1-5 Configuration
+
+# Cloud Provider Settings
+cloud:
+  provider: "azure"  # Options: azure, aws, gcp
+  region: "eastus"   # Primary deployment region
+  
+  # Alternative providers (uncomment to use)
+  # provider: "aws"
+  # region: "us-east-1"
+  # provider: "gcp"
+  # region: "us-central1"
+
+# Deployment Scale
+# Affects cost estimation and architecture sizing
+scale: "medium"  # Options: small, medium, large, enterprise
+
+# Stage Configuration
+stages:
+  # Stage 1: Compliance & Requirements
+  stage1:
+    enabled: true
+    extract_requirements: true
+    extract_evaluation: true
+    identify_risks: true
+    generate_strategy: true
+  
+  # Stage 2: Architecture Mapping
+  stage2:
+    enabled: true
+    map_to_cloud_services: true
+    define_architecture_patterns: true
+    assess_compliance: true
+  
+  # Stage 3: Diagram Generation
+  stage3:
+    enabled: true
+    generate_drawio_diagram: true
+    generate_architecture_summary: true
+  
+  # Stage 4: Cost Estimation
+  stage4:
+    enabled: true
+    estimate_costs: true
+    provide_cost_ranges: true
+    identify_optimizations: true
+  
+  # Stage 5: Proposal Generation
+  stage5:
+    enabled: true
+    generate_executive_summary: true
+    generate_technical_proposal: true
+    generate_pricing_proposal: true
+    generate_risks_register: true
+
+# LLM Configuration
+llm:
+  # Set to true to use LLM-enhanced agents
+  # Set to false to use rule-based fallback methods
+  enabled: true
+  
+  # Model configuration (when using OpenAI/Azure OpenAI)
+  # Configure via environment variables:
+  # - OPENAI_API_KEY for OpenAI
+  # - AZURE_OPENAI_KEY, AZURE_OPENAI_ENDPOINT for Azure OpenAI
+  # - OPENAI_MODEL or AZURE_OPENAI_DEPLOYMENT for model selection
+  
+  model: "gpt-4o-mini"  # Default model (can be overridden by env vars)
+  temperature: 0.1      # Lower = more deterministic
+  
+# Output Configuration
+output:
+  base_dir: "."
+  
+  # Directory structure
+  directories:
+    stage1: "output"
+    stage2: "stage2_architecture"
+    stage3: "stage3_diagrams"
+    stage4: "stage4_costing"
+    stage5: "stage5_proposal"
+  
+  # Output formats
+  formats:
+    - json
+    - csv
+    - markdown
+    - xml  # For diagrams
+
+# Project Metadata
+project:
+  name: "RFP Agentic Platform"
+  version: "1.0.0"
+  description: "End-to-end RFP automation from compliance to proposal"
+  
+# Feature Flags
+features:
+  use_llm_when_available: true
+  generate_diagrams: true
+  estimate_costs: true
+  verbose_logging: true
+  save_intermediate_results: true

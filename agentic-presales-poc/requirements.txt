@@ -1,0 +1,7 @@
+openai
+pydantic
+pyyaml
+rich
+pypdf
+diagrams
+python-docx

@@ -1,0 +1,74 @@
+{
+  "summary": {
+    "low": 105.0,
+    "expected": 150.0,
+    "high": 225.0,
+    "currency": "USD",
+    "period": "monthly",
+    "scale": "medium",
+    "cloud_provider": "AZURE"
+  },
+  "breakdown": [
+    {
+      "category": "Other",
+      "service": "To Be Determined",
+      "low": 35.0,
+      "expected": 50.0,
+      "high": 75.0,
+      "assumptions": [
+        "Scale: medium",
+        "Pattern: Standard",
+        "per service"
+      ]
+    },
+    {
+      "category": "Other",
+      "service": "To Be Determined",
+      "low": 35.0,
+      "expected": 50.0,
+      "high": 75.0,
+      "assumptions": [
+        "Scale: medium",
+        "Pattern: Standard",
+        "per service"
+      ]
+    },
+    {
+      "category": "Other",
+      "service": "To Be Determined",
+      "low": 35.0,
+      "expected": 50.0,
+      "high": 75.0,
+      "assumptions": [
+        "Scale: medium",
+        "Pattern: Standard",
+        "per service"
+      ]
+    }
+  ],
+  "category_summary": [
+    {
+      "category": "Other",
+      "low": 105.0,
+      "expected": 150.0,
+      "high": 225.0,
+      "service_count": 3
+    }
+  ],
+  "assumptions": [
+    "Deployment scale: medium",
+    "Pay-as-you-go pricing (no reservations)",
+    "Standard usage patterns assumed",
+    "Costs based on public pricing",
+    "Free tier utilized where available",
+    "No support plan costs included"
+  ],
+  "optimization_opportunities": [
+    "Consider reserved instances for 30-50% savings on compute",
+    "Use auto-scaling to optimize resource utilization",
+    "Implement lifecycle policies for storage cost optimization",
+    "Evaluate serverless alternatives for variable workloads",
+    "Review and rightsize resources based on actual usage",
+    "Consider committed use discounts for predictable workloads"
+  ]
+}

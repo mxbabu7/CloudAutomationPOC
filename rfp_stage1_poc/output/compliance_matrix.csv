@@ -1,0 +1,4 @@
+ID,Section,Type,Requirement,Owner,Status,Response
+O-001,2. Functional Requirements,Optional,•System should continue to make MMI assignments and be able to respond to real,TBD,Pending,
+O-002,2. Functional Requirements,Optional,•Retain the current structure of MMI Identiﬁers and current MMI IDs should not,TBD,Pending,
+O-003,6. Acceptance Criteria and Testing,Optional,•Release cycles should align with EPICs.,TBD,Pending,

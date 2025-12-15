@@ -1,0 +1,38 @@
+[
+  {
+    "req_id": "O-001",
+    "requirement": "•System should continue to make MMI assignments and be able to respond to real...",
+    "cloud_service": "To Be Determined",
+    "additional_services": [],
+    "architecture_pattern": "Standard",
+    "compliance_level": "Compliant",
+    "assumptions": [
+      "Standard implementation"
+    ],
+    "implementation_notes": "Standard implementation using cloud best practices"
+  },
+  {
+    "req_id": "O-002",
+    "requirement": "•Retain the current structure of MMI Identiﬁers and current MMI IDs should not...",
+    "cloud_service": "To Be Determined",
+    "additional_services": [],
+    "architecture_pattern": "Standard",
+    "compliance_level": "Compliant",
+    "assumptions": [
+      "Standard implementation"
+    ],
+    "implementation_notes": "Standard implementation using cloud best practices"
+  },
+  {
+    "req_id": "O-003",
+    "requirement": "•Release cycles should align with EPICs....",
+    "cloud_service": "To Be Determined",
+    "additional_services": [],
+    "architecture_pattern": "Standard",
+    "compliance_level": "Compliant",
+    "assumptions": [
+      "Standard implementation"
+    ],
+    "implementation_notes": "Standard implementation using cloud best practices"
+  }
+]

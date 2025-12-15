@@ -1,0 +1,4 @@
+req_id,requirement,cloud_service,additional_services,architecture_pattern,compliance_level,assumptions,implementation_notes
+O-001,•System should continue to make MMI assignments and be able to respond to real...,To Be Determined,,Standard,Compliant,Standard implementation,Standard implementation using cloud best practices
+O-002,•Retain the current structure of MMI Identiﬁers and current MMI IDs should not...,To Be Determined,,Standard,Compliant,Standard implementation,Standard implementation using cloud best practices
+O-003,•Release cycles should align with EPICs....,To Be Determined,,Standard,Compliant,Standard implementation,Standard implementation using cloud best practices
