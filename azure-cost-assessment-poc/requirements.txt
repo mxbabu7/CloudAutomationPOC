@@ -1,0 +1,9 @@
+# Azure Cost Assessment - Required Packages
+
+# Azure SDK packages
+azure-identity==1.15.0
+azure-mgmt-costmanagement==4.0.1
+azure-mgmt-resource==23.0.1
+
+# Environment and utilities
+python-dotenv==1.0.0
